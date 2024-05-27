@@ -1,8 +1,9 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: auto;
-  font-family: "arial", sans-serif;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
 }
@@ -29,12 +30,13 @@
 }
 
 .nav__links {
-  display: flex;
+  margin: 8px 0 0;
   column-gap: 20px;
-  padding: 0;
   list-style-type: none;
-  font-size: 8px;
-  margin-top: 8px;
+  padding: 0;
+  align-items: end;
+  display: flex;
+  flex-direction: row;
 }
 
 .nav__link {
@@ -49,24 +51,21 @@
 }
 
 .header__title {
-  max-width: 635px;
+  margin-top: 128px;
   font-size: 62px;
   line-height: 76px;
   font-weight: 500;
-  margin: 0;
-  margin-top: 128px;
+  max-width: 635px;
 }
 
 .header__description {
-  margin: 0;
   margin-top: 32px;
-  max-width: 515px;
   font-size: 20px;
   line-height: 30px;
+  max-width: 515px;
 }
 
 .header__image {
-  display: flex;
   max-width: 636px;
 }
 
@@ -88,12 +87,13 @@
   margin: 0;
   color: #838383;
 }
+
 .staff {
   background-image: url("../images/staff_picks_background.jpg");
   padding: 100px 0 140px;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .staff__title {
@@ -118,11 +118,12 @@
   max-width: 760px;
   margin: 68px auto 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 40px;
+  flex-wrap: wrap;
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
 }
 
 .card {
@@ -130,8 +131,8 @@
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
-  height: 420px;
   width: 360px;
+  height: 420px;
 }
 
 .card__content {
@@ -160,4 +161,132 @@
   line-height: 20px;
   color: #838383;
   margin-top: auto;
+}
+.events {
+  padding: 100px 0 120px 80px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.events__content {
+  flex-basis: 580px;
+}
+
+.events__heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.events__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 32px 0 0;
+}
+
+.events__info-section {
+  margin-top: 32px;
+}
+
+.event-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.event-info__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.event-info__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.events__description {
+  margin: 40px 0 60px;
+}
+
+.events__more {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.events__cover {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 780px;
+  max-width: 780px;
+  position: relative;
+}
+
+.events__image {
+  max-width: 100%;
+}
+
+.person {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.person_name_feynman {
+  top: -30px;
+  left: 319px;
+}
+
+.person_name_burbidge {
+  top: 96px;
+  right: 125px;
+}
+
+.person_name_cannon {
+  bottom: 18px;
+  right: 216px;
+}
+
+.person_name_mitchell {
+  bottom: 82px;
+  left: 142px;
+}
+
+.person_name_tarter {
+  top: 79px;
+  left: 159px;
+}
+
+.person__image {
+  /* max-width: 100%; */
+}
+
+.person__image_size_l {
+  width: 140px;
+}
+
+.person__image_size_m {
+  width: 100px;
+}
+
+.person__image_size_s {
+  width: 80px;
+}
+
+.person__caption {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
 }
