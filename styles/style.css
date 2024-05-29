@@ -317,7 +317,7 @@
 .step {
   display: flex;
   flex-direction: column;
-  flex-basis: 200px;
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -398,4 +398,5 @@
 .footer__copyright {
   display: flex;
   align-items: flex-end;
+  margin-top: 100px;
 }
